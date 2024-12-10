@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    background-color: #ddebf8;
+    font-family: 'Orbitron', sans-serif;
+}
+
+section{
+    width: 600px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: rgba(121, 232, 235, 0.58);
+    border-radius: 15px;
+    background-color:rgba(121, 232, 232, 0.58);
+}
+
+.facts{
+    display: flex;
+    margin: 10px;
+}
+
+.card {
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    padding: 8px;
+    margin: 4px;
+    background-color: #f9f9f9; 
+} 
+
+/* Questions  */
+
+.questions {
+    display: grid;
+    gap: 8px; 
+    padding: 16px;
+    margin: auto;
+}
+
+.underline {
+    border-bottom: 4px solid rgb(24, 127, 156);
+}
+
+.funText{
+    color: rgb(24, 127, 156);
+    font-family: 'Happy Monkey', cursive;
+}
+
+img{
+    max-height: 250px;
+    margin-top: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+
+
