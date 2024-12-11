@@ -28,6 +28,7 @@ td {
     border-radius: 35px;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 td:hover{
@@ -59,4 +60,5 @@ tr {
     font-style: italic;
     border: 1px dashed #a3a4a3;
     border-radius: 15px;
+    cursor: not-allowed;
 }
