@@ -6,29 +6,50 @@ body {
 
 table {
     padding: 20px;
-    border-collapse: collapse;
-    width: 100%;
+    border-collapse: separate /*collapse*/;
+    border-spacing: 10px;
 }
 
+/* Header = th */
 th {
     background-color: #c17373;
     font-weight: bold;
 }
 
+/* 
+    style for header and cell
+        th => Table Header
+        td => Table Data
+    
+*/
 th,
 td {
-    border: 1px solid #484c47;
+    border: 2px solid #4b4c4b;
+    border-radius: 35px;
     padding: 20px;
     text-align: center;
 }
 
+td:hover{
+    background-color: #05172e;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* table row = tr */
 tr {
     background-color: #4a94f6;
 }
 
 .btn {
     background-color: #c17373;
+    font-weight: bold;
 }
+.btn:hover {
+    background-color: #b05c5c;
+    color: #e5d714;
+}
+
 
 .result {
     text-align: right;
@@ -36,4 +57,6 @@ tr {
     font-size: large;
     font-weight: bolder;
     font-style: italic;
+    border: 1px dashed #a3a4a3;
+    border-radius: 15px;
 }
