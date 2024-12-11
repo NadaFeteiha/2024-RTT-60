@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(221, 221, 223);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: rgb(6, 99, 125);
+    font-family: "Happy Monkey", cursive;
+    font-weight: bolder;
+}
+
+/* Style img */
+img {
+    border-radius: 15px;
+}
+
+a:active {
+    color: rgb(255, 0, 230);
+}
+
+
+/* Style Nav bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+/* Hover effect for links */
+.navbar a:hover {
+    background-color: #575757;
+    color: #ffffff;
+}
+
+/* Pseudo-Elements */
+p::first-line {
+    color: red;
+    background-color: rgb(109, 214, 182);
+}
+
+
+
+
+th, td {
+    border: 1px solid #171515; 
+    padding: 10px; 
+}
+
+/* header */
+th {
+    background-color: #c17373;
+    font-weight: bold;
+}
+
+/* cells */
+tr {
+    background-color: #4a94f6; 
+}

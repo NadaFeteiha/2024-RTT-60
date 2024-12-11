@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(144, 138, 138);
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    padding: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #c17373;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #484c47;
+    padding: 20px;
+    text-align: center;
+}
+
+tr {
+    background-color: #4a94f6;
+}
+
+.btn {
+    background-color: #c17373;
+}
+
+.result {
+    text-align: right;
+    background: #eaf9e7;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+}

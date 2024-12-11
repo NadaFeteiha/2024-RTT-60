@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- applay style to this page -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
     <!-- Link pages -->
-    <nav>
-        <a href="./pages/about.html">About</a>
-        <a href="./pages/signUp.html">Sign Up</a>
-        <a href="./pages/signin.html">Sign in</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/signUp.html">Sign Up</a></li>
+            <li><a href="./pages/signin.html">Sign in</a></li>
+        </ul>
     </nav>
 
     <!-- Test List -->
@@ -36,14 +41,43 @@
     <hr>
     <h1>Images</h1>
     <!-- Image remotelly -->
-    <img src="https://t3.ftcdn.net/jpg/10/03/23/40/240_F_1003234076_iuWOu0eCKAia7WSu4Bk27qqElcviE5aR.jpg" alt="img" width="250" />
+    <img src="https://t3.ftcdn.net/jpg/10/03/23/40/240_F_1003234076_iuWOu0eCKAia7WSu4Bk27qqElcviE5aR.jpg" alt="img"
+        width="250" />
 
     <!-- Image from pc -->
-    <img src="img.jpeg" alt="img" width="250"/>
-    
+    <img src="img.jpeg" alt="img" width="250" />
+
     <br><br>
     <hr>
-    
+
+    <p>
+        test test test test test test test test test test test test
+        test test test test test test test test test test test test
+    </p>
+    <hr>
+    <br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Occupation</th>
+        </tr>
+        <tr>
+            <td>Person 2</td>
+            <td>28</td>
+            <td>Software Engineer</td>
+        </tr>
+        <tr>
+            <td>Person 1</td>
+            <td>34</td>
+            <td>Data Analyst</td>
+        </tr>
+    </table>
+
+    <hr>
+    <br><br>
+
     <!-- Example of head lines -->
     <h1>Title 1</h1>
     <h2>Title 2</h2>
@@ -53,5 +87,39 @@
     <h6>Title 6</h6>
     <hr>
     <br><br>
+
+    <table>
+        <caption>Practice Table</caption>
+        <thead>
+            <tr>
+                <th>Header1</th>
+                <th>Header2</th>
+                <th>Header3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col 1 cell 1</td>
+                <td>col 2 cell 2</td>
+                <td>col 3 cell 3</td>
+            </tr>
+            <tr>
+                <td>col 1 cell 1</td>
+                <td>col 2 cell 2</td>
+                <td>col 3 cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer1</td>
+                <td>footer2</td>
+                <td>footer3</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <br><br>
+
 </body>
+
 </html>
