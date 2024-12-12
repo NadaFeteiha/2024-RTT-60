@@ -1,8 +1,22 @@
 body {
-    background-color: rgb(144, 138, 138);
+    background-color: rgb(213, 206, 206);
     display: flex;
     justify-content: center;
 }
+
+.board{
+    border: 2px groove #a3a4a3;
+    border-radius: 10px;
+    background-color: rgb(144, 138, 138);
+}
+
+caption{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Happy Monkey', cursive;
+    padding-top: 10px;
+}
+
 
 table {
     padding: 20px;
