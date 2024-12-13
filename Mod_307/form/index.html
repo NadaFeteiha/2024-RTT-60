@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+
+        <p style="font-family: fonTest">test</p>
+    </div>
+
+    <div>
+        <h1>Login Page</h1>
+
+        <form action="#">
+            <!--  Name  -->
+            <label for="text">Name</label>
+            <input type="text" name="name" placeholder="Enter your Name" required>
+            <br>
+
+            <!--  Email  -->
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <br>
+
+            <!-- Phone -->
+            <label for="Phone">Phone</label>
+            <input type=“tel” placeholder="111-111-1111">
+            <br>
+
+            <!-- Birthdate -->
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <br>
+
+            <!-- Gender -->
+            <label>Gender</label>
+            <label for="male">
+                <input type="radio" name="gender"> Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender"> Female
+            </label>
+            <br>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
