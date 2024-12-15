@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: white;
-    background-color: #111;
+    background-color: #5e5b63;
     padding: 25px 20px;
     position: sticky;
     top: 0;
@@ -44,13 +44,13 @@ body {
 
 .navbar_links a {
     text-decoration: none;
-    color: white;
+    color: #e5bba7;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .navbar_links a:hover {
-    color: #0073e6;
+    color: #95abbc;
 }
 
 /*#endregion */
@@ -62,30 +62,50 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #eab6b6;
+    padding-bottom: 50px;
+    background-color: #e5bba7;
+    /* wave  */
+    --mask:
+        radial-gradient(34.99px at 50% calc(100% - 48px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(34.99px at 50% calc(100% + 18px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 .profile_text {
     flex: 1;
     padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .profile_card h1 {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    font-size: 1.8rem;
-    color: #333;
+    font-size: 3.8rem;
+    font-weight: bolder;
+    color: #3b6482;
+}
+
+.profile_card h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 2.8rem;
+    color: #5e5b63;
 }
 
 .profile_card p {
     margin: 5px 0 0 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #666;
 }
 
 .profile_Img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    --s: 250px;
+    width: var(--s);
+    aspect-ratio: 1;
+    --g: /calc(var(--s)*0.241) calc(var(--s)*0.241) radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
+    mask: calc(50% + var(--s)*0.344) calc(50% + var(--s)*0.073) var(--g), calc(50% + var(--s)*0.217) calc(50% + var(--s)*0.277) var(--g), calc(50% + var(--s)*-0.012) calc(50% + var(--s)*0.352) var(--g), calc(50% + var(--s)*-0.236) calc(50% + var(--s)*0.262) var(--g), calc(50% + var(--s)*-0.349) calc(50% + var(--s)*0.049) var(--g), calc(50% + var(--s)*-0.299) calc(50% + var(--s)*-0.187) var(--g), calc(50% + var(--s)*-0.109) calc(50% + var(--s)*-0.335) var(--g), calc(50% + var(--s)*0.132) calc(50% + var(--s)*-0.326) var(--g), calc(50% + var(--s)*0.311) calc(50% + var(--s)*-0.165) var(--g), radial-gradient(calc(var(--s)*0.439), #000 99%, #0000 101%) subtract, calc(50% + var(--s)*0.457) calc(50% + var(--s)*0.286) var(--g), calc(50% + var(--s)*0.167) calc(50% + var(--s)*0.513) var(--g), calc(50% + var(--s)*-0.202) calc(50% + var(--s)*0.5) var(--g), calc(50% + var(--s)*-0.476) calc(50% + var(--s)*0.253) var(--g), calc(50% + var(--s)*-0.528) calc(50% + var(--s)*-0.112) var(--g), calc(50% + var(--s)*-0.332) calc(50% + var(--s)*-0.425) var(--g), calc(50% + var(--s)*0.019) calc(50% + var(--s)*-0.539) var(--g), calc(50% + var(--s)*0.361) calc(50% + var(--s)*-0.401) var(--g), calc(50% + var(--s)*0.534) calc(50% + var(--s)*-0.075) var(--g);
 }
 
 /*#endregion */
@@ -128,7 +148,7 @@ body {
     font-size: 1.8rem;
     margin: 0 auto;
     margin-bottom: 10px;
-    color: #555;
+    color: #5e5b63;
     text-align: center;
     border-bottom: 2px solid #ddd;
     border-left: 40px;
@@ -141,6 +161,8 @@ body {
     font-size: 1rem;
     text-align: center;
     padding: 10px;
+    color: #748593;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*#endregion */
@@ -155,7 +177,7 @@ body {
 }
 
 .skill_item {
-    background-color: #333;
+    background-color: #dbe9e7;
     border-radius: 10px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -164,8 +186,44 @@ body {
     margin: 0;
 }
 
-/*#region Experinces*/
+/* ************** Projects ********************* */
+/*#region Projects*/
+.prject_title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c7b9b9;
+    font-size: 1.6rem;
+}
 
+.prject_description {
+    color: #5e5b63;
+    text-align: center;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+.inline-list {
+    list-style: none;
+    padding: 10px 0px 10px 0px;
+    margin: 0;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inline-list li {
+    display: inline-block;
+    align-items: center;
+    background-color: #e5bba7;
+    border-radius: 6px;
+    /* top, right, bottom, left */
+    padding: 4px 8px 4px 8px;
+}
+
+/*#endregion */
+
+/*#region Experinces*/
 .experience_container {
     margin-top: 25px;
     gap: 15px
@@ -176,16 +234,22 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
-    min-width: 400px;
-    max-width: 600px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0 12px 15px #a7b6b4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card h3,
 .card h5 {
     text-align: center;
-    margin-top: 0;
-    color: #333;
+    margin: 0;
+    color: #95abbc;
 }
 
 .card p {
@@ -193,10 +257,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0.9rem;
-}
-
-.card:hover {
-    transform: translateY(-15px);
+    color: #e5bba7
 }
 
 .company_continer {
@@ -210,7 +271,7 @@ body {
     list-style-type: disc;
     padding-left: 20px;
     font-size: 1rem;
-    color: #444;
+    color: #5e5b63;
 }
 
 .card ul li {
@@ -218,7 +279,6 @@ body {
 }
 
 /*#endregion */
-
 
 /*#region Contact me*/
 .quote {
@@ -237,7 +297,7 @@ body {
 }
 
 .form_container {
-    background-color: white;
+    background-color: #a7b6b4;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 5%;
@@ -261,6 +321,7 @@ body {
 .form_group label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 6px;
+    color: #5e5b63;
 }
 
 .form_group input,
@@ -280,7 +341,7 @@ body {
 
 .submit_btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #95abbc;
     color: #fff;
     font-size: 1rem;
     border: none;
@@ -289,10 +350,22 @@ body {
 }
 
 .submit_btn:hover {
-    background-color: #0056b3;
+    background-color: #5e5b63;
 }
 
 /*#endregion */
+
+/*#region wavy Img*/
+.wavy_circle {
+    --s: 300px;
+    width: var(--s);
+    aspect-ratio: 1;
+    --g: /calc(var(--s)*0.278) calc(var(--s)*0.278) radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
+    mask: calc(50% + var(--s)*0.326) calc(50% + var(--s)*0) var(--g), calc(50% + var(--s)*0.163) calc(50% + var(--s)*0.282) var(--g), calc(50% + var(--s)*-0.163) calc(50% + var(--s)*0.282) var(--g), calc(50% + var(--s)*-0.326) calc(50% + var(--s)*0) var(--g), calc(50% + var(--s)*-0.163) calc(50% + var(--s)*-0.282) var(--g), calc(50% + var(--s)*0.163) calc(50% + var(--s)*-0.282) var(--g), radial-gradient(calc(var(--s)*0.404), #000 99%, #0000 101%) subtract, calc(50% + var(--s)*0.44) calc(50% + var(--s)*0.254) var(--g), calc(50% + var(--s)*0) calc(50% + var(--s)*0.508) var(--g), calc(50% + var(--s)*-0.44) calc(50% + var(--s)*0.254) var(--g), calc(50% + var(--s)*-0.44) calc(50% + var(--s)*-0.254) var(--g), calc(50% + var(--s)*0) calc(50% + var(--s)*-0.508) var(--g), calc(50% + var(--s)*0.44) calc(50% + var(--s)*-0.254) var(--g);
+}
+
+/*#endregion */
+
 
 /*#region RegionName*/
 /*#endregion */
