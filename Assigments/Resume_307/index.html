@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +9,179 @@
 
 <body>
 
+    <!--#region Nav Bar  -->
+    <div class="navbar_container">
+        <h1 class="navbar_logo">Nada Feteiha</h1>
+        <nav>
+            <ul class="navbar_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experinces">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--#endregion -->
+
+    <section id="home">
+        <!--#region Profile  -->
+        <div class="profile_card">
+            <div class="profile_text">
+                <h1> Hi, I'm </h1>
+                <h1>Nada Feteiha</h1>
+                <p>Software developer</p>
+
+                <div class="social_buttons">
+
+                    <a href="https://www.linkedin.com/in/nada-feteiha/" target="_blank" class="social_button">
+                        <img src="resources/linkedIn.png" alt="LinkedIn" />
+                    </a>
+
+                    <a href="https://github.com/NadaFeteiha" target="_blank" class="social_button">
+                        <img src="resources/github.webp" alt="github" />
+                    </a>
+                    <a href="https://x.com/NadaFeteiha" target="_blank" class="social_button">
+                        <img src="resources/twitter.png" alt="twitter" />
+                    </a>
+                </div>
+
+            </div>
+            <img class="profile_Img" src="me.jpg" alt="Nada Feteiha">
+        </div>
+        <!--#endregion -->
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Experienced Android developer with a passion for creating efficient and user-friendly applications. Eager
+            to contribute to innovative projects and grow professionally.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills_container">
+            <p class="skill_item">Kotlin/Java</p>
+            <p class="skill_item">RXJava</p>
+            <p class="skill_item">Coroutines</p>
+            <p class="skill_item">Hilt</p>
+            <p class="skill_item">Koin</p>
+            <p class="skill_item">JavaScript</p>
+            <p class="skill_item">HTML</p>
+            <p class="skill_item">CSS</p>
+            <p class="skill_item">Android</p>
+            <p class="skill_item">KMP</p>
+            <p class="skill_item">Jetpack Compose</p>
+            <p class="skill_item">XML</p>
+            <p class="skill_item">Git</p>
+            <p class="skill_item">GitHub</p>
+            <p class="skill_item">PostgreSQL</p>
+            <p class="skill_item">MongoDB</p>
+            <p class="skill_item">Room</p>
+            <p class="skill_item">SQLite</p>
+            <p class="skill_item">Firebase</p>
+            <p class="skill_item">SQL</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+    </section>
+
+    <section id="experinces" class="section">
+        <h2>Experience</h2>
+        <div class="experience_container">
+            <div class="card">
+                <h3>Android Engineer</h3>
+                <div class="company_continer">
+                    <h5>@Alsaad101</h5>
+                    <p>Sep 2016 - May 2018</p>
+                </div>
+                <ul>
+                    <li>Developed, tested, and deployed over 10 Android applications, including MIS (a parental
+                        monitoring app) and Al-noble Laundry (a laundry service app).</li>
+                    <li>Prioritized code modularity for scalability and maintained adherence to best practices in the
+                        Android ecosystem.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Software Developer</h3>
+                <div class="company_continer">
+                    <h5>@Ministry of Planning</h5>
+                    <p class="date"><strong>Jun 2015 - Mar 2016</strong></p>
+                </div>
+                <ul>
+                    <li>Implemented Vaccination Reminder Android application and successfully launched.</li>
+                    <li>Collaborated effectively with cross-functional teams to deliver high-quality products.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Software Engineer - Contract</h3>
+                <div class="company_continer">
+                    <h5>@Freelance</h5>
+                    <p class="date"><strong>Mar 2014 - May 2015</strong></p>
+                </div>
+                <ul>
+                    <li>Independently designed, developed, and deployed Android applications from conception to the
+                        Google Play Store.</li>
+                    <li>Successfully launched applications such as International Champion Swimmer Academy and Buy&Sale.
+                    </li>
+                    <li>Proficient in implementing core functionalities and continuously enhancing user experience
+                        through feature additions.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Android Engineer</h3>
+                <div class="company_continer">
+                    <h5>@ASGATech Ltd.</h5>
+                    <p class="date"><strong>Nov 2013 - Sep 2014</strong></p>
+                </div>
+                <ul>
+                    <li>Contributed to the development of innovative mobile applications, including Axiom Telecom and
+                        Quran Pro.</li>
+                    <li>Implemented new features, improved user interfaces, and resolved technical issues.</li>
+                    <li>Specialized in developing Quran Pro, incorporating features such as multilingual Quran text,
+                        audio recitations, and offline functionality.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p class="quote">As said, "The best and most beautiful things in the world cannot be seen or even touched - they
+            must be felt with the heart." So, feel free to contact me.</p>
+        <form action="/submit-form" class="form_container">
+            <div class="form_group">
+                <label for="message">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form_group">
+                <label for="message">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form_group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+            </div>
+
+            <div class="form_group">
+                <button type="submit" class="submit_btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+
 </body>
 
 </html>
+
+
+<!--#region main  -->
+
+
+<!--#endregion -->
