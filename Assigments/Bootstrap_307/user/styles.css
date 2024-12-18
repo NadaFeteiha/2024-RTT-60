@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+.page_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-inner img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    border: 1px solid #3d4a81;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #2f81cd;
+}
+
+.row-cols-md-4 .col {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .row-cols-1 .col {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+.navbar {
+    background-color: #3d4a81;
+}
+
+.nav-link {
+    color: #cea1b8 !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #2cacf3 !important;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    color: #2f81cd;
+}
+
+.btn-transparent:hover {
+    color: #cea1b8;
+}
+
+
+.featured-title {
+    color: #3d4a81;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #3d4a81;
+    padding-bottom: 10px;
+}
+
+.badge {
+    background-color: #2cacf3;
+    color: #fff;
+}
+
+.price {
+    color: #cea1b8;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #3d4a81;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2f81cd;
+}
