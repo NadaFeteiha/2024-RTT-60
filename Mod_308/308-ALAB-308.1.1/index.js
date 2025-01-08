@@ -41,7 +41,6 @@ console.log(`is All over than 25`, isAllOver25);
 // ====================================================================================================
 console.log("======================================================================= \nPart 2: Practical Math");
 // Part 2: Practical Math
-// You are planning a cross-country road trip!
 // The distance of the trip, in total, is 1,500 miles.
 const totalDistance = 1500;
 
@@ -51,10 +50,10 @@ const fuelBudget = 175;
 // The average cost of fuel is $3 per gallon.
 const fuelCost = 3;
 
-// Your car’s fuel efficiency is as follows:
 //**************** SPEED 55 **********************//
 console.log("********* speed 55 ************")
 // At 55 miles per hour, you get 30 miles per gallon.
+
 // How many gallons of fuel will you need for the entire trip?
 const gallonsRequired = totalDistance / 30;
 console.log("gallons required for speed 55 is ", gallonsRequired);
@@ -71,6 +70,7 @@ console.log("hours required for speed 55", hoursRequired);
 //**************** SPEED 60 **********************//
 console.log("********* speed 60 ************")
 // At 60 miles per hour, you get 28 miles per gallon.
+
 // How many gallons of fuel will you need for the entire trip?
 const gallonsRequired60 = totalDistance / 28;
 console.log("gallons required for speed 60 is ", gallonsRequired);
@@ -87,6 +87,7 @@ console.log("hours required for speed 60", hoursRequired60);
 //************** SPEED 75 ******************** */
 console.log("********* speed 75 ************")
 // At 75 miles per hour, you get 23 miles per gallon.
+
 // How many gallons of fuel will you need for the entire trip?
 const gallonsRequired75 = totalDistance / 23;
 console.log("gallons required for speed 75 is ", gallonsRequired75);
