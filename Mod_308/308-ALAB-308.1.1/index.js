@@ -116,3 +116,26 @@ if(isBudgetEnough75){
 // ====================================================================================================
 // Part 3: Future Exploration
 console.log("======================================================================= \nPart 3: Future Exploration");
+
+function calculateGallonesRequired(totalDistance, milesPerGallon){
+    return totalDistance / milesPerGallon;
+}
+
+function isEnoughBudget(totalBudget, fuelCost ,gallonsRequired){
+    return totalBudget >= (fuelCost * gallonsRequired);
+}
+
+function calculateHoursRequired(speed){
+    return totalDistance / speed;
+}
+
+function main(){
+    let speed = prompt("Please provide Speed");
+    let milesPerGallon = prompt("Please provide miles per gallon");
+    const totalBudget = 175;
+    const totalDistance = 1500;
+    const fuelCost = 3;
+    console.log(`FOR SPEED ${speed} isBudgetEnough `, isEnoughBudget(totalBudget,fuelCost,calculateGallonesRequired(totalDistance, milesPerGallon)));
+    console.log(`FOR SPEED ${speed} hoursRequired `, calculateHoursRequired(speed));
+}
+main();
