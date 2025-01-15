@@ -81,3 +81,33 @@ while (change > 0) {
     counter++;
 }
 console.log(`Romeo received ${counter} quarters`);
+
+// Do-While Loop
+x = 10;
+
+do {
+	x--;
+	console.log(x);
+} while (x > 50);
+
+
+// Labeled Statements
+// The labeled statement can be used with break and continue statements.
+x = 1;
+let y = 1;
+
+myLoop: while (true) {
+	console.log(`Outer loop ${x}.`);
+	x++;
+
+	while (true) {
+		console.log(`Inner loop ${y}.`);
+		y++;
+
+		if (x == 5 && y % 5 == 0) {
+			break myLoop;
+		} else if (y % 5 == 0) {
+			break;
+		}
+	}
+}
