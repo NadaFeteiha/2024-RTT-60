@@ -48,3 +48,43 @@ myCar.engine = {
 console.log(myCar.engine.size);
 
 
+// loop through object
+console.log("Loop through object");
+for (let key in myCar) {
+    if (myCar[key]=== 250){
+        console.log(`my car has ${myCar[key]} ${key}`);
+        break;
+    }else{
+        console.log(`my car has ${myCar[key]} ${key}s`);
+    }
+}
+
+const values = Object.values(myCar);
+values.forEach(value => console.log(value));
+console.log("====================================")
+
+// Object.entries() - returns an array of a given 
+// object's own enumerable string-keyed property [key, value] pairs
+console.log("Object entries");
+console.log(Object.entries(myCar));
+console.log("====================================")
+
+// destructuring object
+console.log("Destructuring object");
+const { brand, year, hp, color } = myCar;
+console.log(brand, year, hp, color);    
+console.log("====================================")
+
+
+// map object
+// map object to a new object means converting an object to a map object
+console.log("Map object");
+const map = new Map(Object.entries(myCar));
+console.log(map);
+console.log("====================================")
+
+// set object
+// set object to a new object means converting an object to a set object
+console.log("Set object");
+const set = new Set(Object.entries(myCar));
+console.log(set);
