@@ -61,3 +61,55 @@ fruits.shift();
 console.log(fruits);
 console.log("====================================")
 
+// slice() - Extracting Elements from an Array
+let favMovies = allMovies.slice(0, 5);
+console.log("Favorite movies:\n",favMovies);
+console.log("====================================")
+
+
+
+// 2D Arrays
+
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(matrix);
+console.log("====================================")
+// log diagonal elements
+console.log("diagonal elements"); 
+console.log(matrix[0][0], matrix[1][1], matrix[2][2]);
+console.log("====================================")
+
+
+// flatten 2D array
+let flatMatrix = matrix.flat();
+console.log(flatMatrix);
+console.log("====================================")
+
+
+// sort() - Sorting an Array
+console.log('Sort array');
+let num = [4, 2, 5, 1, 3, -14 , 0];
+console.log("sort ascending: ",num.sort((a, b) => a - b));
+console.log("sort descending: ",num.sort((a, b) => b - a));
+console.log("====================================")
+
+// for each in one line
+console.log('Movies');
+movies.forEach(movie => console.log(movie));
+console.log("====================================")
+
+// for each with index
+console.log('Movies with index');
+movies.forEach((movie, index) => console.log(index + 1, movie));
+console.log("====================================")
+
+// copy array with spread operator
+console.log('copy array with spread operator');
+
+let copyMovies = ["new array movies",...movies];
+console.log(copyMovies);
+console.log("====================================")
