@@ -1,4 +1,4 @@
-// Date Object Lab:
+// Date Object Lab: https://docs.google.com/document/d/1BuZGIzPsNlK1GzteBHO9LKuGfr9SGiAK_8VT18e6gYM/edit?tab=t.0
 
 //Part 1: Introduction to the Date Object
 // TODO: Task 1: Create a Date Object

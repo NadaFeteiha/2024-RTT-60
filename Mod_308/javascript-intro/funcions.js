@@ -188,4 +188,88 @@ console.log("======================Hoisting Functions=========================="
 // });
 
 
+// nested functions
+function outer() {
+    function inner() {
+        console.log('inner');
+    }
+    inner();
+    console.log('outer');
+}
+outer();
+
+console.log("================================================");
+
+// pass by value vs pass by reference
+// pass by value
+let a = 5;
+let b = a;
+a = 10;
+console.log(`a: ${a}`);
+console.log(`b: ${b}`);
+
+// pass by reference
+let obj1 = { name: 'Max' };
+let obj2 = obj1;
+obj1.name = 'Alex';
+
+console.log(`obj1.name: ${obj1.name}`);
+console.log(`obj2.name: ${obj2.name}`);
+
+console.log("================================================");
+
+// pass by value 
+let myVar = 20;
+function passBy(myVar) {
+    myVar = myVar + 10;
+    return myVar;
+}
+
+console.log(myVar);
+console.log(passBy(myVar));
+console.log(myVar);
+console.log("================================================");
+
+// Shallow Copies
+let obj = { name: 'Max', age: 25 };
+let objCopy = obj;
+objCopy.name = 'Alex';
+
+console.log(`obj.name: ${obj.name}`);
+console.log("================================================");
+
+// Deep Copies
+let numbers2 = [[1], [2], [3]];
+let numbersCopy = [];
+for (let i = 0; i < numbers2.length; i++) {
+    numbersCopy.push([...numbers2[i]]);
+}
+numbersCopy[0].push(100);
+
+console.log(numbers2);
+console.log(numbersCopy);
+
+console.log("================================================");
+
+// deep copy using JSON
+const myPerson = {
+    name: {
+        first: 'Timmy',
+        last: 'Timtim'
+    },
+    age: 30,
+    location: {
+        city: 'New York',
+        state: 'New York',
+        zip: 10001
+    }
+}
+
+function copyPerson(oldPerson) {
+    let jsonString = JSON.stringify(oldPerson);
+
+    return JSON.parse(jsonString);
+}
+
+const myPersonCopy = copyPerson(myPerson);
 
