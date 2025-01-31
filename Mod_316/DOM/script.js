@@ -16,6 +16,7 @@
 const button = document.getElementById("magicButton"); // <- this one is done!
 const title = document.getElementById("title"); // TODO: <- pass the id of the H1
 const btnTheme = document.getElementById("themChange");
+const container = document.getElementById("container");
 
 // TODO: 2. console log the button and title variables:
 console.log(button); // <-- button
@@ -52,7 +53,7 @@ button.onclick = function () {
 // You can start right below this line.
 
 btnTheme.onclick = function () {
-  document.body.style.backgroundColor = "Violet";
+  document.body.style.backgroundColor = "#E6E6FA";
   document.body.style.color = "white";
   title.style.color = "Gray";
   title.style.fontSize = "2em";
@@ -60,7 +61,6 @@ btnTheme.onclick = function () {
   title.style.fontWeight = "bold";
   title.style.textAlign = "center";
   title.style.padding = "10px";
-  title.style.border = "2px solid red";
 
   // style the button
   button.style.backgroundColor = "black";
@@ -69,13 +69,10 @@ btnTheme.onclick = function () {
   btnTheme.style.backgroundColor = "black";
   btnTheme.style.color = "white";
 
-  // add the button to the center
-  button.style.margin = "auto";
-  button.style.display = "block";
-  btnTheme.style.margin = "auto";
-
-  btnTheme.style.margin = "auto";
-  btnTheme.style.display = "block";
-  btnTheme.style.margin = "auto";
+  // add the container div to the center
+  container.style.display = "flex";
+  container.style.justifyContent = "center";
+  container.style.alignItems = "center";
+  container.style.gap = "10px";
 
 }
