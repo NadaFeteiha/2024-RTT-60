@@ -391,3 +391,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+.node_modules/
+./module_320/first-react-app/node_modules
