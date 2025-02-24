@@ -1,18 +1,22 @@
-function NavBar() {
-    return (
-    <nav>
-        <ul>
-            <li>
-            <a href="#">Home</a>
-        </li>
+import PerScholesLogo from "./PerScholeasLogo";
 
-        <li>
-            <a href="#">About</a>
-        </li>
-        
-        </ul>
+function NavBar() {
+  const username = "Nada";
+  return (
+    <nav className="mt-5" onClick={() => alert("clicked")} style={styles}>
+      <PerScholesLogo />
+      <a href="#" className="some-class">Home</a>
+      <a href="#">About</a>
+
+      <div>Welcome, {username.toUpperCase()}</div>
     </nav>
-    );
+  );
 }
+
+const styles = {
+  display: "flex",
+  justifyContent: "space-around"
+}
+
 
 export default NavBar;
