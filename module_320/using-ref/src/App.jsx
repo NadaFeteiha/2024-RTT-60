@@ -1,9 +1,7 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import stock from "./assets/stock.mov";
-import { createConnection } from "./data/chat";
 
-
-/*export default function VideoPlayer() {
+export default function VideoPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const myRef = useRef(null);
 
@@ -31,14 +29,4 @@ import { createConnection } from "./data/chat";
       </video>
     </>
   );
-}
-*/
-
-export default function ChatRoom() {
-  useEffect(() => {
-    const connection = createConnection();
-    connection.connect();
-  }, []);
-  
-  return <h1>Welcome to the chat!</h1>;
 }
