@@ -1,6 +1,8 @@
 import './App.css'
 import { useState } from 'react';
 import { getChatCompletion } from './api/groq.js';
+import { CiUser } from "react-icons/ci";
+import { LuBot } from "react-icons/lu";
 
 function App() {
   const [prompt, setPrompt] = useState('');
@@ -47,8 +49,9 @@ function App() {
           <div>
             {messages.map((message, idx) => {
               return (
-                <div key={idx}>
-                  <div>{message.content}</div>
+                <div key={idx} className='flex items-center'>
+                  {message.role === 'user' ? <CiUser size={24} /> : <LuBot size={24} />}
+                  <div className='ml-2'>{message.content}</div>
                 </div>
               )
             })}
