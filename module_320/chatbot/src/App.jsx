@@ -1,5 +1,6 @@
 import './App.css'
 import { useState } from 'react';
+import { getChatCompletion } from './api/groq.js';
 
 function App() {
   const [prompt, setPrompt] = useState('');
@@ -8,15 +9,30 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const newMessages = {
+    // create a new message object
+    const newMessage = {
       role: 'user',
       content: prompt,
     }
 
-    // send the messages....
+    // copy the current messages and add the new message
+    const newMessages = [...messages, newMessage];
 
+    // call the API to get the chat completion
+    const completion = await getChatCompletion(newMessages);
+    console.log(completion);
 
-    setMessages([...messages, newMessages]);
+    // updating state with the new messages
+    setMessages(
+      [
+        ...newMessages,
+        {
+          role: 'assistant',
+          content: completion.choices[0].message.content,
+        }
+      ]
+    );
+
     setPrompt('');
   };
 
