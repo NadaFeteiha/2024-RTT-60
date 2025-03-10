@@ -9,7 +9,6 @@ const server = http.createServer((req, res) => {
     res.write('<h1 style="color: red">Hello, World!</h1>');
     res.write('<p>Welcome to my first Node.js server!</p>');
     res.end();
-
 }
 );
 
