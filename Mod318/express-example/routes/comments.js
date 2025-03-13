@@ -32,12 +32,17 @@ router.route("/")
 router
     .route('/:commentID')
     .get((req, res) => {
-        const comment = comments.find(comment => comment.id == req.params.commentID);
-        if (comment) {
-            res.json(comment);
-        } else {
-            res.status(404).send("Comment not found");
+        const {userId, postId} = req.query;
+        let filteredComments = comments
+        if (userId) {
+            filteredComments = filteredComments.filter(comment => comment.userId == userId)
         }
+        if (postId) {
+            filteredComments = filteredComments.filter(comment => comment.postId == postId)
+        }
+        const comment = filteredComments.find(comment => comment.id == req.params.commentID)
+        if (comment) res.json(comment)
+        else { res.status(404).send("Comment not found") }
     }).patch((req, res) => {
         const comment = comments.find((comment, i) => {
             if (comment.id == req.params.commentID) {
